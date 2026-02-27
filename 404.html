@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Toon It!</title>
+    <style>
+        :root {
+            --bg-light: #faf6f0;
+            --primary: #d4a04a;
+            --text-main: #2a2015;
+            --text-muted: #8a7a60;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: var(--bg-light);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-main);
+            text-align: center;
+            padding: 20px;
+        }
+        .emoji { font-size: 4em; margin-bottom: 20px; }
+        h1 { color: var(--primary); margin-bottom: 10px; }
+        p { color: var(--text-muted); margin-bottom: 20px; }
+        a {
+            background: var(--primary);
+            color: #1a1408;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: opacity 0.3s;
+        }
+        a:hover { opacity: 0.85; }
+    </style>
+</head>
+<body>
+    <div class="emoji">🎨</div>
+    <h1>Page Not Found</h1>
+    <p>The page you're looking for doesn't exist or has been moved.</p>
+    <a href="/">Back to Toon It!</a>
+</body>
+</html>
