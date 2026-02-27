@@ -1796,10 +1796,10 @@
         // ==========================================
         // SUPABASE CONFIGURATION
         // ==========================================
-        const SUPABASE_URL = 'https://zgfpxdkanwbcieowrqoz.supabase.co';
+        const SUPABASE_URL = 'https://diqphgkmfquwwzbbkdke.supabase.co';
         const _k1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6';
-        const _k2 = 'InpnZnB4ZGthbndiY2llb3dycW96Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzAzMTAwN';
-        const _k3 = 'DUsImV4cCI6MjA4NTg4NjA0NX0.07T6ACLiIkWY_JbaodznjwEBgrWuVkLKQ-j7bIMpYF0';
+        const _k2 = 'ImRpcXBoZ2ttZnF1d3d6YmJrZGtlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIyMTk2M';
+        const _k3 = 'zgsImV4cCI6MjA4Nzc5NTYzOH0.5qRU5yJZBo0K6ejwcGTHIn6Gtbh9-ZbyW4NDpN0YUS0';
         const SUPABASE_ANON_KEY = _k1 + _k2 + _k3;
 
         let supabaseClient = null;
@@ -3630,7 +3630,7 @@
                     // Fallback: check Supabase Storage directly after 30s
                     var elapsedSec = transformStartTime ? (Date.now() - transformStartTime) / 1000 : 0;
                     if (elapsedSec > 30) {
-                        var storageUrl = 'https://zgfpxdkanwbcieowrqoz.supabase.co/storage/v1/object/public/videos/' + currentJobId + '.mp4';
+                        var storageUrl = 'https://diqphgkmfquwwzbbkdke.supabase.co/storage/v1/object/public/videos/' + currentJobId + '.mp4';
                         var cacheBuster = '?_t=' + Date.now() + '_' + pollCount;
                         try {
                             var response = await fetch(storageUrl + cacheBuster, { method: 'HEAD', cache: 'no-store' });
@@ -4368,8 +4368,8 @@
         if (window.supabaseClient) return window.supabaseClient;
         if (window.supabase && typeof window.supabase.createClient === 'function') {
             window.supabaseClient = window.supabase.createClient(
-                'https://zgfpxdkanwbcieowrqoz.supabase.co',
-                'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6' + 'InpnZnB4ZGthbndiY2llb3dycW96Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzAzMTAwN' + 'DUsImV4cCI6MjA4NTg4NjA0NX0.07T6ACLiIkWY_JbaodznjwEBgrWuVkLKQ-j7bIMpYF0'
+                'https://diqphgkmfquwwzbbkdke.supabase.co',
+                'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6' + 'ImRpcXBoZ2ttZnF1d3d6YmJrZGtlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIyMTk2M' + 'zgsImV4cCI6MjA4Nzc5NTYzOH0.5qRU5yJZBo0K6ejwcGTHIn6Gtbh9-ZbyW4NDpN0YUS0'
             );
             return window.supabaseClient;
         }
